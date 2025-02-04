@@ -6,6 +6,6 @@ SELECT
     ROUND((SELECT SUM(csat_score)
     FROM call_center 
     WHERE csat_score IS NOT NULL AND csat_score >= 8) / SUM(csat_score) * 100, 2)
-FROM call_center;
+FROM call_center_augmented;
 
 
